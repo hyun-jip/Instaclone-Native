@@ -48,11 +48,12 @@ const ExtraContainer = styled.View`
 
 function Photo({ id, user, caption, file, isLiked, likes }) {
   const navigation = useNavigation();
-  const { width, height } = useWindowDimensions();
-  const [imageHeight, setImageHeight] = useState(height - 450);
+  const { width: Swidth } = useWindowDimensions();
+  const [imageHeight, setImageHeight] = useState(300);
+
   useEffect(() => {
     Image.getSize(file, (width, height) => {
-      setImageHeight(height / 3);
+      setImageHeight((height * Swidth) / width);
     });
   }, [file]);
   return (
@@ -64,7 +65,7 @@ function Photo({ id, user, caption, file, isLiked, likes }) {
       <File
         resizeMode="cover"
         style={{
-          width,
+          width: Swidth,
           height: imageHeight,
         }}
         source={{ uri: file }}
