@@ -2221,6 +2221,11 @@ anymatch@^2.0.0:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
 
+apollo3-cache-persist@^0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/apollo3-cache-persist/-/apollo3-cache-persist-0.11.0.tgz#08333c0a0c9a6c3accc0078776f1f59719cf67f3"
+  integrity sha512-+3wakfMwDUMtuP7D0cJlwJaeUWIB7qz79+6rv/vyklWO/e1lFcyeHaJmx9pMjwcZrwBkf3KgA+4wQTYPgJHomQ==
+
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.yarnpkg.com/argparse/-/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
