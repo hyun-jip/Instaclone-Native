@@ -26,7 +26,7 @@ export const logUserOut = async () => {
 };
 
 const httpLink = createHttpLink({
-  uri: "https://rotten-ladybug-74.loca.lt/graphql",
+  uri: "https://fresh-puma-8.loca.lt/graphql",
 });
 
 const authLink = setContext((_, { headers }) => {
