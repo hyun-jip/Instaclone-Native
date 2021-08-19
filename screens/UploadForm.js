@@ -35,6 +35,7 @@ const Caption = styled.TextInput`
   padding: 10px 20px;
   border-radius: 100px;
 `;
+
 const HeaderRightText = styled.Text`
   color: ${colors.blue};
   font-size: 16px;
